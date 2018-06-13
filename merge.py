@@ -5,11 +5,9 @@ def merge(left, right):
     while leftInd < len(left) and rightInd < len(right):
         if left[leftInd] <= right[rightInd]:
             merged.append(left[leftInd])
-            #left = left[:len(left)//2]
             leftInd+=1
         else:
             merged.append(right[rightInd])
-            #right = right[len(right)//2:]
             rightInd+=1
 
     merged+=left[leftInd:]
